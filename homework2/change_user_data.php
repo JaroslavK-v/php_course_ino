@@ -1,4 +1,11 @@
 <?php
+
+function change_user_data($userData) {
+    $_SESSION['name'] = $userData['name'];
+    $_SESSION['surname'] = $userData['surname'];
+    $_SESSION['age'] = $userData['age'];
+}
+
 session_start();
 if (!isset($_SESSION['userName'])) {
     
@@ -7,14 +14,6 @@ if (!isset($_SESSION['userName'])) {
 }
 
 else {
-
-
-function change_user_data($userData) {
-    $_SESSION['name'] = $userData['name'];
-    $_SESSION['surname'] = $userData['surname'];
-    $_SESSION['age'] = $userData['age'];
-}
-
 change_user_data($_POST);
 header('Location: userpage.php');
 }
