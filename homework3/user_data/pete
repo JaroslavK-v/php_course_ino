@@ -1,0 +1,7 @@
+{
+    "userName":"Пётр", 
+    "userSurname" : "Тодоровский", 
+    "userRole" :"member", 
+    "userPassword" : "Retr0",
+    "userAge" : 92
+}
