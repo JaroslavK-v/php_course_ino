@@ -40,14 +40,14 @@ class User {
     }
     
     public function set_user_attribute($userData) {
-       echo 'user data <br>'; var_dump($userData);
+      
         
         foreach($userData as $attribute => $value) {
             
 
                 $this->$attribute = (string)$value;
             
-        } echo ' <p>user info: ' . $this->get_name() . " " . $this->get_surname() . '</p>';
+        }
         
     }
     

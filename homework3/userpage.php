@@ -9,8 +9,8 @@ else {
     // получаем объект с пользователя
     
     $user = UserProvider::get_user_data($_SESSION['userName']);
-    var_dump($users[$_SESSION['userName']]);
-    var_dump($user);
+//    var_dump($users[$_SESSION['userName']]);
+//    var_dump($user);
     
     
 ?>
